@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Contacto</title>
+
+  <link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg">
+  
+  <link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <main>
+
+    <h1>Contacto</h1>
+ 
+    <section  class="contacto" >
+      <div>
+        
+        <a class="bloque" href="https://instagram.com/tatofsc" target="_blank"><img src="img/ImgIG.png" alt="Instagram" width="200" height="200"></a>
+        <a class="bloque" href="https://twitter.com/tatofsc" target="_blank"><img src="img/ImgTW.png" alt="Twitter" width="200" height="200"></a>
+        
+      </div>
+     
+      <form id="formulario" action="mailto:renatofsandescaccia@gmail.com?subject=Consulta Porfolio." method="post" target="_blank">
+        <div>
+          <div class="columna_izquierda">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre-form" maxlength="30" required><span class="bold"> (*)</span>  
+          </div>
+          <div class="columna_derecha">
+            <label for="apellido">Apellido: </label>
+            <input type="text" name="apellido" id="apellido-form" maxlength="30" required><span class="bold"> (*)</span>
+          </div>
+        </div>
+         
+
+        <div>
+          <div class="columna_izquierda">
+            <label for="email">Email: </label>
+            <input  type="email" name="email" id="email-form" maxlength="30" required><span class="bold"> (*)</span>
+          </div>
+          <div class="columna_derecha">
+            <label for="date"> Nacimiento:</label>
+            <input type="date" name="date" id="date-form">
+          </div>
+        </div>
+
+
+        
+        <div>
+          <div class="columna_izquierda">
+            <label for="genero">Género: </label>
+            <select name="genero" id="genero-form">
+              <option>Otro</option>
+              <option>Agénero</option>
+              <option>Género Fluido</option>
+              <option>Mujer</option>
+              <option>Mujer trans</option>
+              <option>No Binarie</option>
+              <option>Travesti</option>
+              <option>Trava</option>
+              <option>Varón</option>
+              <option>Varón trans</option>
+            </select>
+          </div>
+          <div class="columna_derecha">
+            <label for="signoZodiacal">Signo Zodiacal:</label>
+            <select name="signoZodiacal" id="signoZodiacal-form">
+              <option>Aries</option>
+              <option>Tauro</option>
+              <option>Géminis</option>
+              <option>Cáncer</option>
+              <option>Leo</option>
+              <option>Virgo</option>
+              <option>Libra</option>
+              <option>Escorpio</option>
+              <option>Sagitario</option>
+              <option>Capricornio</option>
+              <option>Acuario</option>
+              <option>Piscis</option>
+            </select><span class="bold"> (*)</span>
+          </div>
+        </div>
+        <div>
+          <label for="comentarios">Comentarios:</label>
+          <textarea name="comentarios" id="comentarios-form" maxlength="700" placeholder="Deje aquí sus observaciones..."></textarea>
+        </div>
+
+        
+        <input type="submit" name="enviar"  id="enviar-form" value="Enviar" formenctype="text/plain">
+        <input type="reset" name="borrar"   id="borrar-form" value="Borrar">
+      </form>
+
+
+    </section>
+
+    <nav >
+      <a  class='botones-nav' href="index.html">Home</a>
+      <a  class='botones-nav' href="conoceme.html">Conoceme</a>
+      <a  class='botones-nav' href="cartelera.html">Cartelera</a>
+      <a  class='botones-nav' href="contacto.html">Contactame</a>
+    </nav>
+
+  </main>
+  
+</body>
+
+<footer class="derechosDeAutor">
+  <small>
+   &copy; Copyright 2022, Tato efe.
+ </small> 
+ </footer>
+
+</html>

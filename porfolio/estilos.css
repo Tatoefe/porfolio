@@ -1,0 +1,373 @@
+/*/////////////////////////////////////////////////////////////////////////
+Estilos hmtl, body.
+/////////////////////////////////////////////////////////////////////////*/
+@font-face {
+  font-family: 'Monofett';
+  font-style: normal;
+  font-weight: 400;
+  src: url('Monofett.woff2') format('woff2');
+  }
+
+html {
+  background-image: url(./img/fondo.jpg);
+  /*background-color: rgb(0, 0, 0);*/
+  margin: 0px;
+  padding: 0px;
+  background-repeat: no-repeat;
+	background-size: 100% 100%;
+  
+}
+
+body {
+  margin: 30px auto ;
+  padding: 0px;
+  width: 1000px;
+  background-color: rgb(255, 255, 255,0);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius:22px;
+}
+
+
+h1 {
+  display: flex;
+  margin: 0px;
+  font-family: 'Monofett';
+  font-size: 70px;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  color: rgb(160, 219, 50);
+
+}
+
+.derechosDeAutor{
+  color: rgb(160, 219, 50);
+  width: 600px;
+  height: 20px;
+  flex-direction: column;
+  align-items: center;
+  font-family:Cambria;
+  font-size: 15px;
+  margin-left: 423px;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+nav a {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Courier New';
+  width: 80px;
+  height: 30px;
+  background-color: rgb(160, 219, 50,0.2);
+  padding: 20px;
+  text-decoration: none;
+  color: rgb(160, 219, 50);
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(160, 219, 50);
+}
+
+/**************************************************************************
+Estilos para la Home
+**************************************************************************/
+
+  .imgHome{
+    background-image: url(./img/ImgHome.png);
+    width: 960px;
+    height: 300px;
+    display: flex;
+    margin-top: 10px;
+    margin-left:20px;
+  }
+
+  h2{
+  border: 5px inset rgb(109, 116, 199);
+  color: rgb(185, 250, 238);
+  height: 40px;
+  width: 330px;
+  font-size: 30px;
+  font-family: Bradley Hand;
+  margin-left: 335px; 
+  margin-top: 15px;
+  margin-bottom: 10px;
+  }
+
+  .musica{
+    background-color: rgb(255, 255, 255,0);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    position: relative;
+  }
+
+  .spotify{
+    display: inline-block;
+    background-color:rgb(0, 0, 0);
+    width: 150px;
+    height: 150px; 
+    margin-right: 40px;   
+    margin-bottom: 10px;
+    margin-left: 45px;
+    border: 7.5px outset rgb(46, 46, 46);
+  }
+/**************************************************************************
+Estilos para la galería
+**************************************************************************/
+
+.galeria {
+  background-color: rgb(255, 255, 255,0);
+  display: flex;
+  justify-content: space-around;
+  height: 560px;
+  flex-wrap: wrap;
+  align-content: space-around;
+  position: relative;
+}
+
+.miniatura {
+  display: inline-block;
+  background-color:rgba(87, 96, 199, 0.5);
+  /*109, 116, 199,0.5)*/
+  width: 200px;
+  height: 180px;  
+  padding: 20px;
+  margin: 10px;
+  text-decoration: none;    
+  border: 5px outset rgb(160, 219, 50);
+  
+}
+
+.miniatura img {
+  height: 130px;
+  margin-bottom: -4px;  
+}
+
+.miniatura span {
+  display: block;
+  color: rgb(185, 250, 238);
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 15px;
+  font-family: Cambria;
+ 
+}
+
+
+/**************************************************************************
+Estilos para usar JavaScript en la galería
+**************************************************************************/
+
+#contenedor_imagen_grande {
+  background: rgba(109, 116, 199, 0.5);
+  width: 500px;
+  height: 400px;  
+  padding: 25px; 
+	margin: 0 auto;
+	position:absolute;	
+  top:150px; 
+  left: 450px;
+  visibility: hidden; 
+  border-radius:140px;
+
+}
+
+#contenedor_imagen_grande img {
+  border-radius:140px;
+  width: 500px;
+  height: 400px;
+  
+}
+
+
+/**************************************************************************
+Estilos para conoceme.
+**************************************************************************/
+
+.ContenedorConoceme{
+  background-color: rgb(255, 255, 255,0);
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  position: relative;
+  height: 320px;
+}
+
+.ImgConoceme{
+  display: inline-block;
+  background-image: url('./img/imgConoceme.jpg');
+  width: 200px;
+  height: 270px;  
+  margin-left: 52px;
+  border: 20px dashed;
+}
+
+.parrafoConoceme{
+  margin-top: 40px;
+  display: block;
+  justify-content:space-around;
+  align-content: space-around;
+ 
+}
+
+#nombre{
+  height: 200px;
+  width: 700px;
+  display: block;
+  justify-content:space-around;
+  align-content: space-around;
+ 
+}
+
+
+#parrafo{
+  color: rgb(255, 255, 255);
+  height: 250px;
+  width: 700px;
+  font-size: 21px;
+  font-family: Bradley Hand;
+  margin:10px;
+  
+}
+
+.conoceme {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
+  position: relative;
+
+}
+
+.presentacion {
+  display: inline-block;
+  background-color:rgb(109, 116, 199,0.2);
+  width: 210px;
+  height: 190px;  
+  padding: 20px;
+  text-decoration: none;    
+  margin-left: 52px;
+  border:5px inset rgb(60, 39, 179,0.2);
+  border-radius: 140px;
+   
+}
+
+.presentacion img {
+  height: 170px;
+  border-radius:140px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-bottom: -4px;  
+}
+
+/**************************************************************************
+Estilos para contacto.
+**************************************************************************/
+
+.contacto{
+  background-color: rgb(255, 255, 255,0);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
+  position: relative;
+  
+}
+
+.bloque{
+  display: inline-block;
+  background-color:rgb(98, 159, 178,0);
+  width: 200px;
+  height: 200px; 
+  margin-right: 65px; 
+  padding: 0px;    
+  margin-left: 25px;
+  margin-bottom: 12.5px;
+}
+
+.bloque img {
+  height: 200px;
+  border-radius:100px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-bottom: -4px;  
+}
+
+
+/**************************************************************************
+Estilos para formulario.
+**************************************************************************/
+
+#formulario {
+  font-size: 18px;
+  font-family: Bradley Hand;
+  background-color:rgba(87, 96, 199, 0.5);
+  color:rgb(185, 250, 238);
+  padding: 20px;
+  border-collapse: collapse;
+  width: 70%;
+  height: 281px;
+  border: 2px outset rgb(160, 219, 50);
+  margin-top: 10px;
+  margin-bottom: 12.5px;
+}
+
+#formulario input,select,textarea{
+  font-size: 15px;
+  color: blue;
+  font-family: Bradley Hand;
+  background-color: rgb(160, 219, 50);
+}
+
+
+.columna_izquierda {
+  display: inline-block;
+  text-align: left;
+  height: 40px;
+  width: 50%;
+}
+
+.columna_derecha {
+  display: inline-block;
+  text-align: right;
+}
+
+#comentarios-form {
+	width:600px;
+	height:100px;
+  padding:5px;
+	resize:none;
+}
+
+
+#enviar-form
+{
+	width: 150px;
+	margin-top: 5px;
+	border-radius: 10px; 
+  margin-left: 187.5px;
+  height: 30px;
+	background-color: white!important;
+}
+
+#borrar-form
+{
+	background-color: rgb(160, 219, 50)!important;
+	margin-left:20px;
+	border-radius: 10px; 
+  width: 150px;
+  height: 30px;
+}
